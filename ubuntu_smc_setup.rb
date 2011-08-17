@@ -20,7 +20,7 @@ require 'net/ssh'
  puts testgit
  apache2php = ssh.exec!('apt-get -y install apache2 php5 php5-mysql php5-dev php5-curl php5-gd php5-imagick php5-cli')
  puts apache2php 
- testapache2 = ssh.exec!('curl -i http://66.228.53.53')
+ testapache2 = ssh.exec!('curl -i http://example.com')
  puts testapache2
  
  rvminstall = ssh.exec!('bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)')
